@@ -1,0 +1,147 @@
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        /* nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            z-index: 100;
+        } */
+
+        /* nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Each section full screen */
+        section {
+            height: 100vh;
+            padding-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        .navbar-custom {
+
+            .navbar-custom {
+                padding-top: 20px;
+                /* top padding */
+                padding-bottom: 20px;
+                /* bottom padding */
+                padding-left: 30px;
+                /* left padding */
+                padding-right: 30px;
+                /* right padding */
+            }
+
+        }
+
+        #hero {
+            background-image: url('/img/network_connections_background_with_connecting_lines_and_dots_2704.jpg');
+            background-size: cover;
+            /* cover entire section */
+            background-position: center;
+            /* center the image */
+            background-repeat: no-repeat;
+            height: 100vh;
+            /* full viewport height */
+            position: relative;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            /* stack text vertically */
+            justify-content: center;
+            /* vertically center */
+            align-items: center;
+            /* horizontally center */
+            text-align: center;
+            /* center text */
+            padding: 0 30px;
+            /* add some horizontal padding for mobile */
+        }
+
+        .hero-text {
+            margin-top: 100px;
+            margin-left: 60px;
+        }
+
+        #hero img {
+            width: 60%;
+            /* full width */
+            height: auto;
+            /* keep aspect ratio */
+            border-radius: 120px;
+            /* optional */
+            object-fit: cover;
+            /* optional: crop to fit */
+        }
+
+        #hero button {
+            background-color: #072d55;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s ease;
+        }
+
+        #hero button:hover {
+            background-color: #0a3d73;
+            transform: scale(1.05);
+        }
+
+        .socials {
+            margin-top: 20px;
+            font-size: 30px;
+            margin-left: 60px;
+        }
+
+        .socials a {
+            color: #072d55;
+            margin: 0 10px;
+
+        }
+
+        .side-by-side {
+            display: flex;
+            /* make children side by side */
+            gap: 20px;
+            /* space between left and right */
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            /* both take equal space */
+            padding: 20px;
+
+        }
+
+
+        #skills {
+            background: #f5a623;
+        }
+
+        #contact {
+            background: #d64541;
+        }
