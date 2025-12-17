@@ -4,11 +4,13 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models\Skill;
 class PortfolioController extends Controller
 {
+    
     public function index()
     {
-        return view('user.index');
+        $skills = Skill::all();
+        return view('user.index', compact('skills'));
     }
 }

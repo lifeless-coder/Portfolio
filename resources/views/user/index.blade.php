@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="{{ asset('user/userStylesheet.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>Portfolio</title>
 
 
@@ -69,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="img\WhatsApp Image 2025-12-10 at 14.52.46_30fbb86b.jpg" alt="">
+                    <img src="\img\WhatsApp Image 2025-12-10 at 14.52.46_30fbb86b.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -83,11 +87,21 @@
   <div class="side-by-side">
     <div class="left">
       <h2>Left Side</h2>
-      <p>Content for left side.</p>
+      <img src="\img\about me.jpeg" alt="">
     </div>
-    <div class="right">
-      <h2>Right Side</h2>
-      <p>Content for right side.</p>
+    <div class="right" style="padding-top: 70px;">
+        <div style="color: black; font-family: 'Lexend Deca', sans-serif;">
+            <strong><h4>I'm Adrita</h4>
+            <h6>Backend Developer</h6>
+            </strong>
+        </div>
+        <div class="about-me-body">
+             <p>a backend web developer passionate about building robust and scalable web applications.
+                 I specialize in server-side development, API design, and database management, focusing on efficiency, reliability, and clean code.
+                  I enjoy solving complex problems and continuously exploring new technologies to create systems that perform seamlessly.</p>
+                  <button><a href="https://drive.google.com/file/d/1NTmg-eo9zteA3bzIcFy2KAM-dTYnyirz/view?usp=sharing" style="text-decoration: none; color: white;">Resume</a></button>
+        </div>
+      
     </div>
   </div>
 </div>
@@ -95,11 +109,30 @@
     </section>
 
     <section id="skills">
-        <h1>My Skills</h1>
+        <h1 style="text-align: center; color:white; text-shadow: 0 0 6px #6184aaff;"><i class="fa-solid fa-code"></i><strong>Skills & Abilities</strong> </h1>
+        <div class="skills-container">
+        @foreach ($skills as $skill)
+            <div class="skill-card">
+                <img src="{{ asset('img/' . $skill->image) }}" alt="{{ $skill->name }}">
+                <p>{{ $skill->name }}</p>
+            </div>
+        @endforeach
+    </div>
     </section>
 
-    <section id="contact">
-        <h1>Contact Me</h1>
+    <section id="edu">
+        <h1 style="text-align: center; color:black;"><i class="bi bi-mortarboard-fill"></i><strong>My Education</strong> </h1>
+        <p style="text-align: center; color:black; font-size: 15px;">Educated by books, refined by practice.</p>
+        <div class="edu-container">
+            <div class="edu-card">
+                <img src="{{ asset('img/uits.png') }}" class="edu-img" alt="UITS">
+                <h3>BSc in Computer Science & Engineering</h3>
+                <h5>Uiniversity of Information Technology and Sciences(UITS)</h5>
+                <p>2022 - Present</p>
+
+            </div>
+
+        </div>
     </section>
 
 </body>

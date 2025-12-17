@@ -5,7 +5,7 @@
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Lexend Deca", sans-serif;
         }
 
         /* Navbar */
@@ -87,7 +87,7 @@
             /* full width */
             height: auto;
             /* keep aspect ratio */
-            border-radius: 120px;
+            border-radius: 200px;
             /* optional */
             object-fit: cover;
             /* optional: crop to fit */
@@ -137,11 +137,97 @@
 
         }
 
+        #about img {
+            width: 60%;
+            /* full width */
+            height: auto;
+            /* keep aspect ratio */
+            border-radius: 40px;
+            /* optional */
+            object-fit: cover;
+            /* optional: crop to fit */
+        }
+        .about-me-body {
+            margin-top: 20px;
+            font-size: 17px;
+            line-height: 1.6;
+            color: #333;
+        }
+        #about button {
+            background-color: #072d55;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s ease;
+            box-shadow: #072d55 0px 5px 15px;
+        }
 
+        #about button:hover {
+            background-color: #0a3d73;
+            transform: scale(1.05);
+        }
         #skills {
-            background: #f5a623;
+            padding-top: 30px;
+            background: #533cca;
+            
         }
+        .skills-container {
+            margin: 20px 90px;
+            margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+}
 
-        #contact {
-            background: #d64541;
-        }
+/* Small boxes */
+.skill-card {
+    background: radial-gradient(circle at top, #14002e, #060012);
+    border-radius: 16px;
+    padding: 15px 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.edu-container {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* optional: center vertically */
+    margin-top: 30px;
+}
+.edu-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.edu-card {
+    color: #14002e;
+    width: 60%;              /* control card width */
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    
+}
