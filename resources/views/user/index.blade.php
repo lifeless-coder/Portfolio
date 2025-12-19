@@ -227,11 +227,54 @@
     </section>
 
 </body>
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Adrita Hasan. All rights reserved.</p>
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left: Paragraph -->
+            <div class="col-md-4 mb-4">
+                <p class="">
+                    Thank you for visiting my personal portfolio website. Connect with me over socials.
+
+                    <br>Keep Rising 🚀. Connect with me over live chat!
+                </p>
+            </div>
+
+            <!-- Middle: Quick Links -->
+            <div class="col-md-4 mb-4 text-md-center">
+                <h6 class="fw-bold"><strong>Quick Links</strong></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#hero" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="#projects" class="text-light text-decoration-none">Projects</a></li>
+                    <li><a href="#experience" class="text-light text-decoration-none">Education</a></li>
+                    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Contact Info -->
+            <div class="col-md-4 mb-4 text-md-end">
+                <h6 class="fw-bold"><strong>Contact</strong></h6>
+                <p class="mb-1 small">Email: adrita@example.com</p>
+                <p class="mb-1 small">Phone: +880-XXXXXXXXXX</p>
+                <p class="mb-1 small">Bangladesh</p>
+
+                        <a href="https://github.com/lifeless-coder"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/adrita-hasan/"><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                    
+            </div>
+
+        </div>
+
+        <hr class="border-secondary">
+
+        <div class="text-center small">
+            © 2025 Adrita Hasan. All rights reserved.
+        </div>
     </div>
 </footer>
+
 <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
