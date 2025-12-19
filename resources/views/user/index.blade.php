@@ -41,6 +41,7 @@
                     <a class="nav-item nav-link" href="#about">About</a>
                     <a class="nav-item nav-link" href="#skills">Skills</a>
                     <a class="nav-item nav-link" href="#edu">Education</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
                     <a class="nav-item nav-link" href="#experience">Experience</a>
                     <a class="nav-item nav-link" href="#achivement">Achievements</a>
                     <a class="nav-item nav-link" href="#contact">Contact</a>
@@ -66,8 +67,8 @@
                         <button type="button" class="btn"><a href="#about" style="text-decoration: none; color: white;"> About me</a></button>
                     </div>
                     <div class="socials">
-                        <a href=""><i class="bi bi-github"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/lifeless-coder"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/adrita-hasan/"><i class="bi bi-linkedin"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
                         <a href=""><i class="bi bi-instagram"></i></a>
                     </div>
@@ -82,53 +83,143 @@
 
     <!-- About me -->
     <section id="about">
-        <h1 style="text-align: center; color:black;"><i class="bi bi-person-fill" ></i><strong>About Me</strong> </h1>
+        <h1 style="text-align: center; color:black;"><i class="bi bi-person-fill"></i><strong>About Me</strong> </h1>
         <div class="container">
-  <div class="side-by-side">
-    <div class="left">
-      <h2>Left Side</h2>
-      <img src="\img\about me.jpeg" alt="">
-    </div>
-    <div class="right" style="padding-top: 70px;">
-        <div style="color: black; font-family: 'Lexend Deca', sans-serif;">
-            <strong><h4>I'm Adrita</h4>
-            <h6>Backend Developer</h6>
-            </strong>
+            <div class="side-by-side">
+                <div class="left">
+                    <h2>Left Side</h2>
+                    <img src="\img\about me.jpeg" alt="">
+                </div>
+                <div class="right" style="padding-top: 70px;">
+                    <div style="color: black; font-family: 'Lexend Deca', sans-serif;">
+                        <strong>
+                            <h4>I'm Adrita</h4>
+                            <h6>Backend Developer</h6>
+                        </strong>
+                    </div>
+                    <div class="about-me-body">
+                        <p>a backend web developer passionate about building robust and scalable web applications.
+                            I specialize in server-side development, API design, and database management, focusing on efficiency, reliability, and clean code.
+                            I enjoy solving complex problems and continuously exploring new technologies to create systems that perform seamlessly.</p>
+                        <button><a href="https://drive.google.com/file/d/1NTmg-eo9zteA3bzIcFy2KAM-dTYnyirz/view?usp=sharing" style="text-decoration: none; color: white;">Resume</a></button>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="about-me-body">
-             <p>a backend web developer passionate about building robust and scalable web applications.
-                 I specialize in server-side development, API design, and database management, focusing on efficiency, reliability, and clean code.
-                  I enjoy solving complex problems and continuously exploring new technologies to create systems that perform seamlessly.</p>
-                  <button><a href="https://drive.google.com/file/d/1NTmg-eo9zteA3bzIcFy2KAM-dTYnyirz/view?usp=sharing" style="text-decoration: none; color: white;">Resume</a></button>
-        </div>
-      
-    </div>
-  </div>
-</div>
 
     </section>
 
     <section id="skills">
-        <h1 style="text-align: center; color:white; text-shadow: 0 0 6px #6184aaff;"><i class="fa-solid fa-code"></i><strong>Skills & Abilities</strong> </h1>
+        <h1 style="text-align: center; color:white; text-shadow: 0 0 6px #6184aaff;"><i class="fa-solid fa-code"></i><strong> Skills & Abilities</strong> </h1>
         <div class="skills-container">
-        @foreach ($skills as $skill)
+            @foreach ($skills as $skill)
             <div class="skill-card">
                 <img src="{{ asset('img/' . $skill->image) }}" alt="{{ $skill->name }}">
                 <p>{{ $skill->name }}</p>
             </div>
-        @endforeach
-    </div>
+            @endforeach
+        </div>
     </section>
 
+
+    <!-- Education -->
     <section id="edu">
-        <h1 style="text-align: center; color:black;"><i class="bi bi-mortarboard-fill"></i><strong>My Education</strong> </h1>
+        <h1 style="text-align: center; color:black;"><i class="bi bi-mortarboard-fill"></i><strong> My Education</strong> </h1>
         <p style="text-align: center; color:black; font-size: 15px;">Educated by books, refined by practice.</p>
         <div class="edu-container">
             <div class="edu-card">
                 <img src="{{ asset('img/uits.png') }}" class="edu-img" alt="UITS">
-                <h3>BSc in Computer Science & Engineering</h3>
-                <h5>Uiniversity of Information Technology and Sciences(UITS)</h5>
-                <p>2022 - Present</p>
+                <div class="edu-details">
+                    <h4 style="color: #072d55;"><strong>BSc in Computer Science & Engineering</strong></h5>
+                        <h6>University of Information Technology and Sciences(UITS)</h6>
+                        <p style="font-size: 13px;">2022 - Present</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-container">
+            <div class="edu-card">
+                <img src="{{ asset('img\eusc_logo.jpg') }}" class="edu-img" alt="UITS">
+                <div class="edu-details">
+                    <h4 style="color: #072d55;"><strong>Higher Secondery School Certificate</strong></h5>
+                        <h6>Engineering University School and College</h6>
+                        <p style="font-size: 13px;">2018 - 2020</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-container">
+            <div class="edu-card">
+                <img src="{{ asset('img\Willes_Little_Flower_School_&_College_Logo.svg.png') }}" class="edu-img" alt="UITS">
+                <div class="edu-details">
+                    <h4 style="color: #072d55;"><strong>Secondery School Certificate</strong></h5>
+                        <h6>Willes Little Flower School and College</h6>
+                        <p style="font-size: 13px;">2015 - 2017</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h1 style="text-align: center; color:white;"><i class="fa-solid fa-laptop-code"></i><strong> Projects I Made</strong> </h1>
+
+        <div class="projects-grid">
+            @foreach($project as $project)
+            <div class="project-card">
+                <div class="card-image">
+                    <img src="{{ asset('img/'.$project->image) }}" alt="{{ $project->title }}">
+
+                    {{-- Hover overlay --}}
+                    <div class="card-overlay">
+
+                        <h3><strong>{{ $project->title }}</strong></h3>
+                        <p>{{ $project->description }}</p>
+                        <a href="{{ $project->project_url }}" class="btn">Code &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+
+
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <h1 style="text-align: center; color:black;"><i class="bi bi-mortarboard-fill"></i><strong> Experience</strong> </h1>
+        <div class="ex-conteiner">
+            <div class="ex-card">
+                <div class="ex-details" style="text-align: center;">
+                    <h4 style="color: #000000ff;"><strong>Trainee Web Developer</strong></h5>
+                        <h6>Softtech Solution LTD</h6>
+                        <p style="font-size: 13px;">1 Oct 2025 - Present</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h1 style="text-align: center; color:black;"><i class="bi bi-envelope-fill"></i><strong> Contact Me</strong> </h1>
+        <div class="contact-container">
+            <div class="side-by-side">
+                <div class="left">
+                    <img src="\img\contact.jpeg" alt="">
+                </div>
+                <div class="right">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required class="input-box">
+                        <input type="email" name="email" placeholder="Your Email" required class="input-box">
+                        <textarea name="message" placeholder="Your Message" required class="input-box"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
 
             </div>
 
@@ -136,6 +227,11 @@
     </section>
 
 </body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Adrita Hasan. All rights reserved.</p>
+    </div>
+</footer>
 <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
